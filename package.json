@@ -1,0 +1,11 @@
+{
+  "name": "form-payment-integration",
+  "version": "1.0.0",
+  "dependencies": {
+    "express": "^4.17.1",
+    "stripe": "^12.18.0",
+    "cors": "^2.8.5",
+    "body-parser": "^1.19.0",
+    "googleapis": "^126.0.1"
+  }
+}
