@@ -77,6 +77,10 @@ const app = express();
 // Middleware
 app.use(cors({ origin: true }));
 app.use(bodyParser.json());
+// Add a route for the root path
+app.get('/', (req, res) => {
+  res.send('Form payment integration API is running. Use /create-checkout-session to create a payment.');
+});
 
 // Create a checkout session endpoint
 app.post('/create-checkout-session', async (req, res) => {
